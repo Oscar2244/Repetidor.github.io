@@ -1,0 +1,154 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8efd4, #d9e4dd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Main container */
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.container.dark-mode {
+    background: #34495e;
+}
+
+/* Title style */
+.pastel-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.pastel-title.dark-mode {
+    color: #ecf0f1;
+}
+
+/* Buttons */
+.pastel-button {
+    font-size: 1rem;
+    font-weight: bold;
+    background: #d9e4dd;
+    color: #495057;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pastel-button:hover {
+    background: #b8d0c9;
+    transform: scale(1.05);
+}
+
+.pastel-button.dark-mode {
+    background: #5f6f74;
+    color: #ecf0f1;
+}
+
+.pastel-button.limpiar {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.pastel-button.limpiar:hover {
+    background: #f5c6cb;
+    transform: scale(1.05);
+}
+
+/* Input fields */
+.pastel-input {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    width: calc(100% - 20px);
+    background: #f8f9fa;
+    color: #495057;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pastel-input:focus {
+    border-color: #b8d0c9;
+    box-shadow: 0 0 5px rgba(184, 208, 201, 0.5);
+}
+
+.pastel-input.dark-mode {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+/* Result container */
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-container.dark-mode {
+    background: #2c3e50;
+}
+
+.result-container h2 {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin: 5px 0;
+    padding: 5px;
+    background: #e9ecef;
+    border-radius: 10px;
+}
+
+.result-container h2.dark-mode {
+    color: #ecf0f1;
+    background: #34495e;
+}
+
+/* Button for dark mode */
+.modo-oscuro-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    font-size: 1.8rem;
+    color: #495057;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.modo-oscuro-btn.dark-mode {
+    color: #ecf0f1;
+}
+
+.modo-oscuro-btn:hover {
+    transform: scale(1.1);
+}
